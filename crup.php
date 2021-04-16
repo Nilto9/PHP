@@ -7,7 +7,7 @@ if(isset($_POST['save']))
 {
 
     $fn = $MySQLiconn->real_escape_string($_POST['fn']);
-    $fn = $MySQLiconn->real_escape_string($_POST['ln']);
+    $ln = $MySQLiconn->real_escape_string($_POST['ln']);
 
     $SQL = $MySQLiconn->query("INSERT INTO data(fn,ln) VALUES('$fn','$ln')");
 
